@@ -16,8 +16,12 @@ We are trying to use the data from each loan to predict whether the loan will tu
 * Describe the stages of the machine learning process you went through as part of this analysis:
 The first stage I went through, was to separate the data that I wanted to predict from the rest of the data in the data frame. I did this by making a new data frame for just the loan_status column, and set it equal to y. The rest of the data from the original data frame was set as equal to X. I then took the y and the X data frames and further split them into training and testing variables. So, y now has training and testing variables, and the same for X. After doing this, I created a logistical regression model, and used the model to create predictions. I then used a confusion matrix to compare the results, and printed a classification report to show how accurate the model was compared to the actual (test) data.
 
+![alt text](splitting.png)
+
 * Briefly touch on any methods you used (e.g., `LogisticRegression`, or any other algorithms): 
-Logistic regression requires a data set that has labeled examples. Each example usually has one or more features and a binary outcome of either 0 or 1. Logistic regression models determine the probability that a particular instance belongs to a certain class. In our case, whether the loan will become a healthy loan or an unhealthy loan. In order to get the results the model must be trained. After it is trained, it can create predictions, and then classify how accurate those predictions are using metrics such as accuracy, precision, f-1 score, and support. Logistic regression has limitations when the data is non-linear and contains more complex relationships.  
+Logistic regression requires a data set that has labeled examples. Each example usually has one or more features and a binary outcome of either 0 or 1. Logistic regression models determine the probability that a particular instance belongs to a certain class. In our case, whether the loan will become a healthy loan or an unhealthy loan. In order to get the results the model must be trained. After it is trained, it can create predictions, and then classify how accurate those predictions are using metrics such as accuracy, precision, f-1 score, and support. Logistic regression has limitations when the data is non-linear and contains more complex relationships. 
+
+![alt text](logistic_regression_model.png)
 
 ## Results
 
@@ -28,6 +32,8 @@ Using bulleted lists, describe the accuracy scores and the precision and recall 
     * Accuracy - this is calculated as the ration of the number of correct predictions to the total number of predictions made by the model. It measures the overall correctness of the models predictions across all classes. In this case the accuracy was 99%. 
     * Precision - this measures the proportion of correctly predicted positive cases out of all instances predicted as positive by the model. In this case, it correctly predicted 99% of all healthy loans (0), and 91% of all unhealthy loans (1). 
     * Recall - this measures the percentage of relevant data points that were correctly identified by the model. In this case, 100% of all data points were correctly identified for healthy loans (0), and 88% of all relevant data points were correctly identified for the unhealthy loans (1). 
+
+![alt text](classification_report.png)
 
 ## Summary
 
