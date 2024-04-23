@@ -1,8 +1,4 @@
-# credit-risk-classification
-
-The file labeled credit_risk_classification.ipynb has all solution code. 
-
-The Credit Analysis Report is found below. 
+# credit-risk-classification 
 
 ## Overview of the Analysis
 
@@ -38,3 +34,7 @@ Using bulleted lists, describe the accuracy scores and the precision and recall 
 Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. 
 
 The logistic regression model predicts the '0' (healthy loan) labels with 99% of predictions made by the model being correct (precision), and with 100% of the relevant data points being correctly identified by the model (recall). This is a very good result in terms of predicting healthy loans. For '1' (high risk loans), 91% of the predictions made by the model were correct, and 85% of the relevant data points were correctly identified by the model. This model seems to correctly predict whether a loan will be healthy at a higher rate than when it predicts whether a loan will be unhealthy. In either case, I would still recommend that the company use this. Overall, the model scored a 99% in accuracy. If there is any concern over the lower scores regarding the unhealthy loans, the model can be used to focus on predicting healthy loans (being that it scored 99% in precision and 100% in recall for healthy loans). 
+
+# File Information
+
+The file labeled credit_risk_classification.ipynb has all solution code. 
