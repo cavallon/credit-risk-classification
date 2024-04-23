@@ -2,7 +2,7 @@
 
 ## Overview of the Analysis
 
-In this section, describe the analysis you completed for the machine learning models used in this Challenge. 
+This section describes the analysis that was completed for the machine learning models used in this project.  
 
 * Purpose of the analysis:
 The purpose of this analysis is to determine how well the machine can predict the results of the data by comparing the machine predictions to the actual data results. 
